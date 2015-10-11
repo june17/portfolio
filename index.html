@@ -12,7 +12,14 @@
     <script type="text/javascript" src="js/directives.js"></script>
     <script type="text/javascript" src="js/services.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css"/>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css"/>
     <title>Arunraj</title>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#fullpage').fullpage();
+});</script>
   </head>
   <body class="container-fluid" ng-view>
   </body>
