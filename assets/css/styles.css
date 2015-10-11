@@ -1,0 +1,44 @@
+.hero{
+	height: 750px;
+	background: url('../images/background/hero.jpg');
+	background-size: cover;}
+	@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		.hero{
+			height: 567px;
+		}
+	}
+
+.profile{
+}
+	.profile_content{
+		text-align: left;
+		width: 50%;
+		margin: 0 auto;}
+		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+			.profile_content{
+				width:80%;
+			}
+		}
+
+.projects ul li{
+	list-style: none;}
+	.projects span{
+		float: left;
+		padding: 0;
+		margin: 0;
+		background: #00ca85;
+		height: 500px;}
+		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+			.projects span{
+				height: 350px;
+			}
+		}
+
+.page1{
+	height: 100%;
+	background:#f50000;
+}
+.page2{
+	height: 100%;
+	background:#f50330;
+}
