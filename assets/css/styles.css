@@ -1,3 +1,18 @@
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/light.otf');
+}
+.head2{
+	font-family: 'Bree Serif', serif;
+	font-size: 46px;
+	color: #222222;
+}
+.paragraph_text{
+			font-family: 'Varela Round', sans-serif;
+			font-weight: 100;
+			color: #666666;	
+			font-size: 18px;
+}
 .hero{
 	height: 750px;
 	background: url('../images/background/hero.jpg');
@@ -13,11 +28,14 @@
 	.profile_content{
 		text-align: left;
 		width: 50%;
-		margin: 0 auto;}
+		margin: 0 auto;
+		padding: 5% 0 8% 0;}
 		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 			.profile_content{
 				width:80%;
-			}
+				padding: 10% 0;}}
+		.profile_content .head2{
+			text-align: center;
 		}
 
 .projects ul li{
