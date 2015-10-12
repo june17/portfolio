@@ -1,4 +1,4 @@
-var pf=angular.module('portfolio',['ngRoute','pfControllers','pfDirectives']);
+var pf=angular.module('portfolio',['ngRoute','ngAnimate','pfControllers','pfDirectives']);
 
 pf.config(function($routeProvider){
 	$routeProvider

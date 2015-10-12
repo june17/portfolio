@@ -2,61 +2,138 @@
     font-family: myfont;
     src: url('../fonts/light.otf');
 }
+@font-face {
+    font-family: myfont2;
+    src: url('../fonts/medium.otf');
+}
 .head2{
 	font-family: 'Bree Serif', serif;
-	font-size: 46px;
+	font-size: 50px;
 	color: #222222;
 }
 .paragraph_text{
-			font-family: 'Varela Round', sans-serif;
+			font-family: 'myfont', sans-serif;
 			font-weight: 100;
-			color: #666666;	
-			font-size: 18px;
+			color: #222222;	
+			font-size: 20px;
 }
+
+.button{
+	text-decoration: none;
+	font-family: 'myfont2', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	position: relative;
+	padding: 15px;
+	z-index: 3;
+	-webkit-transition:.2s background linear,.2s color linear ;
+	transition:.2s background linear,.2s color linear ;}
+	.button:hover{
+		background: #ffffff;
+		color:#222222;
+	}
+
+.fade.ng-enter {
+  	-webkit-transition:.5s linear all;
+  	transition:.5s linear all;
+  	opacity:0;}
+	.fade.ng-enter.ng-leave-active {
+	  opacity:1;}
+.fade.ng-leave {
+  	-webkit-transition:.5s linear all;
+	transition:.5s linear all;
+  	opacity:1;}
+	.fade.ng-leave.ng-leave-active {
+ 	 opacity:0;}
+
 .hero{
 	height: 750px;
 	background: url('../images/background/hero.jpg');
 	background-size: cover;}
 	@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		.hero{
-			height: 567px;
-		}
-	}
+			height: 567px;}}
 
 .profile{
 }
 	.profile_content{
-		text-align: left;
 		width: 50%;
 		margin: 0 auto;
 		padding: 5% 0 8% 0;}
+		.profile_content .paragraph_text{
+			line-height:30px;
+			text-align: left;}
+		.profile_content .head2{
+			text-align: center;}
+		.profile_content .paragraph_text:first-child{
+			font-size: 50px;
+			text-align: justify;}
 		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 			.profile_content{
 				width:80%;
-				padding: 10% 0;}}
-		.profile_content .head2{
-			text-align: center;
-		}
+				padding: 10% 0;}
+			.profile_content .paragraph_text{
+				line-height:25px;
+				text-align: left;
+				font-size: 18px;}}
 
-.projects ul li{
-	list-style: none;}
+.projects{
+
+	}
 	.projects span{
 		float: left;
 		padding: 0;
 		margin: 0;
-		background: #00ca85;
 		height: 500px;}
 		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 			.projects span{
 				height: 350px;
-			}
-		}
+				width: 100%}}
+		.projects span .overlay{
+			position: absolute;
+			opacity: 0;
+			height: 100%;
+			width: 100%;	
+			top: 0;
+			left: 0;
+			background: #000000;
+			-webkit-transition: opacity .2s linear;
+			transition: opacity .2s linear;}
+			@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+				.projects span .overlay{
+					opacity: .5;}}
 
-.page1{
+		.projects span:hover .overlay{
+			opacity: .7}
+
+		.projects span .content{
+			text-align: center;
+			width: 100%;
+			opacity: 0;
+			z-index: 2;
+			margin:10% auto}
+			@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+				.projects span .content{
+					opacity: 1;}}
+		.projects span:hover .content{
+			opacity: 1;}
+
+	.project_content{
+		height: 100%;
+		width: 50%;
+		background: url('../images/story/1.jpg');
+		background-size: cover;}
+	.project_content2{
 	height: 100%;
-	background:#f50000;
-}
-.page2{
-	height: 100%;
-	background:#f50330;
-}
+	width: 50%;
+	background: url('../images/story/2.jpg');
+	background-size: cover;}
+
+.footer{
+	background: #efefef;
+	height: 300px;}
+	.footer span{
+		text-align: center;
+	}
