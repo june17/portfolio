@@ -18,6 +18,12 @@
 	font-family: 'Bree Serif', serif;
 	font-size: 50px;
 	color: #ffffff;}
+	@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+		.head2, .head2_white{
+			font-size:46px;}
+		.paragraph_text{
+			padding: 0 10%;
+			text-align: justify;}}
 
 .head1{
 	font-family: 'myfont', sans-serif;
@@ -120,6 +126,9 @@
 		text-align: center;
 		padding-top: 20%;
 		z-index: 12;}
+		@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		.hero .head2_white{
+			padding: 50% 20% 0}}
 	.hero:after {
 		  content: " ";
 		  z-index: 0;
@@ -129,7 +138,7 @@
 		  top: 0;
 		  left: 0;
 		  right: 0;
-		  background: rgba(0, 0, 0, 0.4);
+		  background: rgba(0, 0, 0, 0.5);
 		}
 
 
@@ -151,9 +160,12 @@
 			.profile_content{
 				width:80%;
 				padding: 10% 0;}
+			.profile_content .head2{
+				padding-bottom: 5%}
 			.profile_content .paragraph_text{
 				line-height:25px;
-				text-align: left;
+				text-align: justify;
+				padding: 0 5% 5%;
 				font-size: 18px;}}
 
 .projects{
@@ -222,7 +234,7 @@
 .contact{
 	text-align: center;}
 	.contact h2{
-		padding-top: 8%;}
+		padding-top: 10%;}
 
 .footer{
 	background: #efefef;}
