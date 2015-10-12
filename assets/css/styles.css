@@ -12,6 +12,19 @@
 	font-family: 'Bree Serif', serif;
 	font-size: 50px;
 	color: #222222;}
+	.head2_white{
+	margin: 0;
+	padding:0;
+	font-family: 'Bree Serif', serif;
+	font-size: 50px;
+	color: #ffffff;}
+
+.head1{
+	font-family: 'myfont', sans-serif;
+	font-size: 60px;
+	color:#ffffff;
+
+}
 .paragraph_text{
 	font-family: 'myfont', sans-serif;
 	font-weight: 100;
@@ -35,14 +48,12 @@
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: 100;
-	color: #ffffff;
-}
+	color: #ffffff;}
 
 .head14{
-	padding-top: 50px;
 	font-family: 'myfont',sans-serif;
 	font-size: 14px;
-}
+	padding-top: 50px;}
 
 .button{
 	text-decoration: none;
@@ -50,7 +61,7 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #ffffff;
-	border: 2px solid #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 20px;
 	position: relative;
 	padding: 10px 20px;
@@ -60,6 +71,27 @@
 	.button:hover{
 		background: #ffffff;
 		color:#222222;
+	}
+
+.button_black{
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'myfont2', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #222222;
+	border: 1px solid #222222;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-bottom: 15%;
+	-webkit-transition:.2s background linear,.2s color linear ;
+	transition:.2s background linear,.2s color linear ;
+	margin-top: 2%;
+	margin-bottom: 7%;}
+	.button_black:hover{
+		background: #222222;
+		color:#ffffff;
 	}
 
 .fade.ng-enter {
@@ -76,12 +108,30 @@
  	 opacity:0;}
 
 .hero{
+	position: relative;
 	height: 750px;
 	background: url('../images/background/hero.jpg');
 	background-size: cover;}
 	@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		.hero{
 			height: 567px;}}
+	.hero .head2_white{
+		position: relative;
+		text-align: center;
+		padding-top: 20%;
+		z-index: 12;}
+	.hero:after {
+		  content: " ";
+		  z-index: 0;
+		  display: block;
+		  position: absolute;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  background: rgba(0, 0, 0, 0.4);
+		}
+
 
 .profile{
 }
@@ -172,57 +222,55 @@
 .contact{
 	text-align: center;}
 	.contact h2{
-		padding-top: 8%;
-	}
+		padding-top: 8%;}
 
 .footer{
-	background: #efefef;
-	}
+	background: #efefef;}
 	.footer span{
-		text-align: center;
-	}
+		text-align: center;}
+			.footer span .paragraph_text{
+				margin-top: 5px;}
+			.footer span .paragraph_text:first-child{
+				padding-top: 10%;
+				margin-bottom: 0;
+				padding-bottom: 0;}
 
 	.social{
-		padding-top: 15%;
+		padding-top: 10%;
 		display: block;
 		height: 125px;	
-		text-align: center;
-	}
-
-	.social ul{
-		margin: 0 auto;
-		display: block;
-		width: 50%;
-	}
-
-	.social ul li{
-		display: inline-table;
-		padding-left: 5%;
-	}
-	.social ul li:first-child{
-		padding-left: 0;
-	}
-	.twitter{
-		display: block;
-		background: url('../images/icons/twitter.png') no-repeat center;
-		height: 30px;
-		width: 30px;
-		background-size: cover;}
-	.behance{
-		display: block;
-		background: url('../images/icons/behance.png') no-repeat center;
-		height: 30px;
-		width: 30px;
-		background-size: cover;}
-	.fb{
-		display: block;
-		background: url('../images/icons/fb.png') no-repeat center;
-		height: 30px;
-		width: 30px;
-		background-size: cover;}
-	.linkedin{
-		display: block;
-		background: url('../images/icons/linkedin.png') no-repeat center;
-		height: 30px;
-		width: 30px;
-		background-size: cover;}
+		text-align: center;}
+		.social ul{
+			margin: 0 auto;
+			display: block;
+			width: 50%;}
+			.social ul li{
+				display: inline-table;
+				padding-left: 5%;}
+			.social ul li:first-child{
+				padding-left: 0;
+			}
+		.twitter{
+			display: block;
+			background: url('../images/icons/twitter.png') no-repeat center;
+			height: 30px;
+			width: 30px;
+			background-size: cover;}
+		.behance{
+			display: block;
+			background: url('../images/icons/behance.png') no-repeat center;
+			height: 30px;
+			width: 30px;
+			background-size: cover;}
+		.fb{
+			display: block;
+			background: url('../images/icons/fb.png') no-repeat center;
+			height: 30px;
+			width: 30px;
+			background-size: cover;}
+		.linkedin{
+			display: block;
+			background: url('../images/icons/linkedin.png') no-repeat center;
+			height: 30px;
+			width: 30px;
+			background-size: cover;}
