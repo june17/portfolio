@@ -7,26 +7,53 @@
     src: url('../fonts/medium.otf');
 }
 .head2{
+	margin: 0;
+	padding:0;
 	font-family: 'Bree Serif', serif;
 	font-size: 50px;
-	color: #222222;
-}
+	color: #222222;}
 .paragraph_text{
-			font-family: 'myfont', sans-serif;
-			font-weight: 100;
-			color: #222222;	
-			font-size: 20px;
+	font-family: 'myfont', sans-serif;
+	font-weight: 100;
+	color: #222222;	
+	font-size: 18px;}
+.head4{
+	margin: 0;
+	padding:0;
+	font-family: 'myfont', sans-serif;
+	font-weight: 100;
+	color: #ffffff;
+	position: relative;	
+	font-size: 30px;}
+.head12{
+	margin: 0;
+	padding:0;
+	padding-top: 7px;
+	font-family: 'myfont',sans-serif;
+	position: relative;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+.head14{
+	padding-top: 50px;
+	font-family: 'myfont',sans-serif;
+	font-size: 14px;
 }
 
 .button{
 	text-decoration: none;
 	font-family: 'myfont2', sans-serif;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 12px;
 	color: #ffffff;
 	border: 2px solid #ffffff;
+	border-radius: 20px;
 	position: relative;
-	padding: 15px;
+	padding: 10px 20px;
 	z-index: 3;
 	-webkit-transition:.2s background linear,.2s color linear ;
 	transition:.2s background linear,.2s color linear ;}
@@ -87,10 +114,12 @@
 		padding: 0;
 		margin: 0;
 		height: 500px;}
+		
 		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 			.projects span{
 				height: 350px;
 				width: 100%}}
+
 		.projects span .overlay{
 			position: absolute;
 			opacity: 0;
@@ -99,8 +128,9 @@
 			top: 0;
 			left: 0;
 			background: #000000;
-			-webkit-transition: opacity .2s linear;
-			transition: opacity .2s linear;}
+			-webkit-transition: opacity .3s linear;
+			transition: opacity .3s linear;}
+
 			@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 				.projects span .overlay{
 					opacity: .5;}}
@@ -113,27 +143,86 @@
 			width: 100%;
 			opacity: 0;
 			z-index: 2;
-			margin:10% auto}
+			margin:10% auto
+			-webkit-transition: opacity .3s linear;
+			transition: opacity .3s linear;}
+
+			.projects span:hover .content{
+				opacity: 1;}
+
 			@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 				.projects span .content{
 					opacity: 1;}}
-		.projects span:hover .content{
-			opacity: 1;}
 
-	.project_content{
-		height: 100%;
-		width: 50%;
-		background: url('../images/story/1.jpg');
+				.projects span .content .head4{
+					margin-top: 25%;
+				}
+				.projects span .content .button{
+					top:50px;
+				}
+
+		
+		.project_content{
+			background: url('../images/story/1.jpg');
+			background-size: cover;}
+		.project_content2{
+		background: url('../images/story/2.jpg');
 		background-size: cover;}
-	.project_content2{
-	height: 100%;
-	width: 50%;
-	background: url('../images/story/2.jpg');
-	background-size: cover;}
+
+.contact{
+	text-align: center;}
+	.contact h2{
+		padding-top: 8%;
+	}
 
 .footer{
 	background: #efefef;
-	height: 300px;}
+	}
 	.footer span{
 		text-align: center;
 	}
+
+	.social{
+		padding-top: 15%;
+		display: block;
+		height: 125px;	
+		text-align: center;
+	}
+
+	.social ul{
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+	}
+
+	.social ul li{
+		display: inline-table;
+		padding-left: 5%;
+	}
+	.social ul li:first-child{
+		padding-left: 0;
+	}
+	.twitter{
+		display: block;
+		background: url('../images/icons/twitter.png') no-repeat center;
+		height: 30px;
+		width: 30px;
+		background-size: cover;}
+	.behance{
+		display: block;
+		background: url('../images/icons/behance.png') no-repeat center;
+		height: 30px;
+		width: 30px;
+		background-size: cover;}
+	.fb{
+		display: block;
+		background: url('../images/icons/fb.png') no-repeat center;
+		height: 30px;
+		width: 30px;
+		background-size: cover;}
+	.linkedin{
+		display: block;
+		background: url('../images/icons/linkedin.png') no-repeat center;
+		height: 30px;
+		width: 30px;
+		background-size: cover;}
