@@ -1,11 +1,22 @@
 @font-face {
     font-family: myfont;
-    src: url('../fonts/light.otf');
-}
+    src: url('../fonts/light.otf');}
 @font-face {
     font-family: myfont2;
-    src: url('../fonts/medium.otf');
-}
+    src: url('../fonts/medium.otf');}
+/*html{
+	max-width: 1440px;
+	box-sizing: content-box;
+	margin: 0 auto;}
+	html:after{
+		display: table;
+		content: " ";
+		clear: both}
+	@media screen and (min-device-width: 1600px) and (max-device-width: 192px) {
+		html{
+			border-right: 1px solid #f2f2f2;
+		}
+	}*/
 .head2{
 	margin: 0;
 	padding:0;
@@ -28,9 +39,7 @@
 .head1{
 	font-family: 'myfont', sans-serif;
 	font-size: 60px;
-	color:#ffffff;
-
-}
+	color:#ffffff;}
 .paragraph_text{
 	font-family: 'myfont', sans-serif;
 	font-weight: 100;
@@ -65,12 +74,12 @@
 	text-decoration: none;
 	font-family: 'myfont2', sans-serif;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 15px;
 	color: #ffffff;
 	border: 1px solid #ffffff;
 	border-radius: 20px;
 	position: relative;
-	padding: 10px 20px;
+	padding: 12px 20px;
 	z-index: 3;
 	-webkit-transition:.2s background linear,.2s color linear ;
 	transition:.2s background linear,.2s color linear ;}
@@ -85,11 +94,11 @@
 	text-decoration: none;
 	font-family: 'myfont2', sans-serif;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 15px;
 	color: #222222;
 	border: 1px solid #222222;
 	border-radius: 20px;
-	padding: 10px 20px;
+	padding: 12px 20px;
 	margin-bottom: 15%;
 	-webkit-transition:.2s background linear,.2s color linear ;
 	transition:.2s background linear,.2s color linear ;
@@ -128,7 +137,7 @@
 		z-index: 12;}
 		@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		.hero .head2_white{
-			padding: 50% 20% 0}}
+			padding: 40% 20% 0;}}
 	.hero:after {
 		  content: " ";
 		  z-index: 0;
@@ -138,8 +147,25 @@
 		  top: 0;
 		  left: 0;
 		  right: 0;
-		  background: rgba(0, 0, 0, 0.5);
-		}
+		  background: rgba(0, 0, 0, 0.5);}
+.signature{
+	top: 75px;
+	left: 100px;
+	position: absolute;
+	z-index: 20;
+	background: url('../images/icons/signature.png') no-repeat center;
+	width: 100px;
+	height: 29px;
+	background-size: cover;}
+	.signature_blk{
+	bottom: 30px;
+	left: 20px;
+	position: absolute;
+	z-index: 20;
+	background: url('../images/icons/signature_blk.png') no-repeat center;
+	width: 100px;
+	height: 29px;
+	background-size: cover;}
 
 
 .profile{
@@ -286,3 +312,172 @@
 			height: 30px;
 			width: 30px;
 			background-size: cover;}
+
+.navigation{
+	display: inline-block;
+	position: fixed;
+	height: 100%;
+	width: 10%;
+	padding: 0;
+	margin: 0;
+	border-right: 1px #f2f2f2 solid;
+	transition: .2s background linear;}
+	.navigation:hover{
+		background: #000000;}
+		.navigation:hover .signature_blk{
+			bottom: 30px;
+			left: 20px;
+			position: absolute;
+			z-index: 20;
+			background: url('../images/icons/signature.png') no-repeat center;
+			width: 100px;
+			height: 29px;
+			background-size: cover;}
+	@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+		.navigation{
+			display: none;}}
+	@media only screen and (min-device-width : 375px) and (max-device-width : 667px){ 
+			.navigation{
+				display: none;
+				}}
+.right_content{
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+    padding-left: 10%;
+    width: 90%;}
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+    	.right_content{
+    		width:100%;}}		
+.storyitem_container_1{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	height: 751px;
+	overflow: hidden }
+	.storyitem_container_1 .head2{
+		padding: 5% 0 2%;}
+		@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+			.storyitem_container_1 .head2{
+				padding: 15% 0 5%;
+				font-size: 40px;}}
+
+	.elegant{
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		margin-left: -500px;
+		background: url('../images/background/elegant.png');
+		background-size: cover;
+		height: 523px;
+		width: 900px;
+		padding: 0;
+		display: block;}
+		@media only screen and (min-device-width : 375px) and (max-device-width : 667px){ 
+			.elegant{
+				margin-left: 0;
+				left: 20%;
+				}}
+
+.storyitem_container_2{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 751px;
+	margin: 0;
+	padding: 0;
+	border-top: 1px #f2f2f2 solid;
+	border-bottom: 1px #f2f2f2 solid;}
+	.storyitem_container_2 div{
+		position: relative;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	.storyitem_container_2 .head2{
+		display: block;
+		padding: 40% 7% 0;}
+
+	.storyitem_container_2 div .engaging{
+		background: url('../images/background/engaging.gif') no-repeat center;
+		background-size: cover;
+		height: 462px;
+		width: 300px;
+		margin: 20% 5%;}
+		@media only screen and (min-device-width : 375px) and (max-device-width : 667px){ 
+			.storyitem_container_2 div{
+				display: block;
+				float: none;
+				width: 100%;
+				margin: 5% auto;}
+			.storyitem_container_2 .head2{
+				display: block;
+				padding: 5% 2% 0;
+				margin-left: 0;
+				font-size: 40px;}
+			.storyitem_container_2 div .engaging{
+				margin: 8% 7%;
+					}}
+.storyitem_container_3{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 751px;
+	margin: 0;
+	padding: 0;
+	border-top: 1px #f2f2f2 solid;
+	border-bottom: 1px #f2f2f2 solid;
+	overflow: hidden;}
+	.storyitem_container_3 .head2{
+		display: block;
+		padding: 20% 0 0 35%;}
+.profile_screen{
+		position: absolute;
+		bottom: 0%;
+		left: 7%;
+		background: url('../images/background/profile.gif');
+		background-size: cover;
+		height: 625px;
+		width: 235px;
+		padding: 0;
+		display: block;}
+.graph_screen{
+		position: absolute;
+		bottom: 0%;
+		right: 0;
+		background: url('../images/background/graph.gif');
+		background-size: cover;
+		height: 212px;
+		width: 1300px;
+		padding: 0;
+		display: block;
+		z-index: -1;}
+.storyitem_container_4{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 351px;
+	margin: 0;
+	padding: 0;
+	border-top: 1px #f2f2f2 solid;
+	border-bottom: 1px #f2f2f2 solid;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
